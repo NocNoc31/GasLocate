@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.switch-bar {
+    text-align: center;
+    background: #007BFF;
+    padding: 10px;
+}
+.switch-bar button {
+    background: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+.switch-bar button:hover {
+    background: #ddd;
+}
+
+/* Nút đang được chọn */
+.switch-bar button.active {
+    background: #646464;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.container.show {
+    display: block;
+    opacity: 1;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 3px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.map-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.map-link a:hover {
+    text-decoration: underline;
+}
+
+button#addCustomer {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button#searchBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button#addCustomer:hover {
+    background-color: #0056b3;
+}
+
